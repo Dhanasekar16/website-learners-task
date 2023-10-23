@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand{
+    font-size: 28px;
+    color: #0B0B23;
+    font-weight: 700;
+    line-height: normal;
+}
+.nav-link{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: normal;
+}
+.banner_section{
+    height: 500px;
+    max-height: 500px;
+    background-color: #090B1D;
+}
+.accordion_section{
+    margin-top: 110px;
+    border: none;
+}
+.accordion_section .accordion{
+    max-width: 1100px !important;
+    margin: auto;
+}
+.accordion_section .accordion-body{
+    padding: 1rem 2.25rem 120px 2.25rem;
+}
+.accordion_section .accordion-button:not(.collapsed),
+.accordion_section .accordion-button
+ {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    color: #fff;
+    background-color: #11B98F;
+    border-radius: 5px;
+}
+.accordion_section .accordion-item{
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 0px 0px 5px 5px;
+    /* border: 1px solid #EFF2F9; */
+    background-color: #EAF0F6;
+}
+.accordion_section .accordion-button:focus{
+    border-color:none;
+    box-shadow: none;
+}
+.accordion-item:first-of-type .accordion-button{
+    border: none;
+}
+.accordion_section .accordion-button:not(.collapsed)::after {
+    background-image: url('../images/arrow-down.svg');
+    transform: rotate(-360deg);
+}
+.accordion_section .accordion-button::after{
+    background-image: url('../images/arrow-down.svg');
+    transform: rotate(180deg);
+}
+.accordion_section .accordion_heading{
+    font-size: 18px;
+    font-weight: 700;
+    color: #2E3A5E;
+    padding: 38px 10px 25px 10px;
+    border-bottom: 1px solid #D8E1EA;
+}
+.accordion_section .card{
+    max-width: 300px;
+    width: 100%;
+    border: 1px solid #DDF6F0;
+    border-radius: 20px;
+    box-shadow: 6px 6px 24px 0px rgba(28, 49, 88, 0.05);
+}
+.accordion_section .original{
+    display: inline;
+}
+.accordion_section p{
+    font-size: 16px;
+    color: #8392A6;
+    line-height: 26px;
+}
+.accordion_section .card-body{
+    padding: 20px;
+}
+/* see more less css starts here */
+.extra {
+    display: none;
+  }
+  input[type="checkbox"] {
+    height: 0;
+    display: inline;
+    appearance: none;
+  }
+  .card-body label {
+    position: relative;
+    color: #2E3A5E;
+    cursor: pointer;
+    border-radius: 0.5em;
+    font-weight: 700;
+  }
+  label:before {
+    content: "See More";
+  }
+  input[type="checkbox"]:checked ~ label:before {
+    content: "See Less";
+  }
+  .dots:has(~ input[type="checkbox"]:checked) {
+    display: none;
+  }
+  .extra:has(~ input[type="checkbox"]:checked) {
+    display: inline;
+  }
+/* see more less css ends here */  
+
+/* Frame-2 css starts here */
+.tools_title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #2E3A5E;
+}
+.tools_content .btn_bg{
+    width: 170px;
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid #12AA84;
+    background-color: #11B98F;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+}
+.tools_content .btn_border{
+    width: 170px;
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid #12AA84;
+    background-color: #fff;
+    color: #11B98F;
+    font-size: 19px;
+    font-weight: 700;
+}
+.tools_content p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #2E3A5E;
+    margin: 0%;
+}
+/* Frame-2 css ends here */
+@media (min-width:769px)  {
+    .navbar{
+        padding: 60px 190px 53px 190px !important;
+    } 
+}
+
+@media (max-width:767px)  {
+    .navbar{
+        padding: 10px !important;
+    } 
+}
+
+@media (max-width:575px)  {
+    .tools_content{
+        margin-top: 32px;
+    }
+    .tools_content .btn_bg,
+    .tools_content .btn_border
+    {
+        width: 110px;
+    }
+    .accordion_section .accordion-body {
+        padding: 1rem 1rem 2.25rem 1rem;
+    }
+    .tools_content p{
+        padding-left: 1rem;
+    }
+}
